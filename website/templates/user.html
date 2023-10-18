@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+<<<<<<< HEAD
 
 {% from 'bootstrap5/form.html' import render_form %}
 
@@ -15,3 +16,23 @@
 </div>
 
 {% endblock %}
+=======
+
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="page-header text-center py-4"> <!-- Added py-4 class for padding on top and bottom -->
+        <h4>{{ heading }}</h4>
+    </div>
+
+    <!-- Center the form using mx-auto -->
+    <div class="col-md-6 mx-auto"> 
+        {{ render_form(form) }}
+    </div>
+
+</div>
+
+{% endblock %}
+>>>>>>> 3bba827e9b5c1825a1ef66761011efb2e2845192
